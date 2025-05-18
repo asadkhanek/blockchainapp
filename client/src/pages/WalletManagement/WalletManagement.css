@@ -1,0 +1,164 @@
+.wallet-management-container {
+  padding: 20px;
+}
+
+.wallet-title {
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #333;
+}
+
+.wallet-card,
+.address-card,
+.address-list-card,
+.security-card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.wallet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.balance-title {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-bottom: 5px;
+}
+
+.balance-amount {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #28a745;
+  margin-bottom: 5px;
+}
+
+.balance-usd {
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+.qr-container {
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.address-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.address-details {
+  overflow: hidden;
+}
+
+.address-value {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 240px;
+}
+
+.address-balance {
+  font-weight: 600;
+  color: #28a745;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.copy-button {
+  flex-shrink: 0;
+  margin-left: 10px;
+}
+
+.address-table {
+  margin-bottom: 0;
+}
+
+.address-cell {
+  max-width: 300px;
+}
+
+.action-btn {
+  margin-right: 5px;
+}
+
+.no-data-message {
+  text-align: center;
+  padding: 20px;
+  color: #6c757d;
+}
+
+.security-section {
+  margin-bottom: 20px;
+}
+
+.warning-text {
+  color: #dc3545;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(220, 53, 69, 0.1);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.key-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.key-value {
+  font-family: 'Courier New', monospace;
+  letter-spacing: 1px;
+}
+
+.security-description {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.qr-modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-code {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+}
+
+.address-display {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}

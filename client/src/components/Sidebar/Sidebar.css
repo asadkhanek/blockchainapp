@@ -1,0 +1,189 @@
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+  background-color: #0d6efd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: #fff;
+}
+
+.user-role {
+  font-size: 12px;
+  color: #adb5bd;
+  text-transform: capitalize;
+}
+
+.sidebar-nav {
+  padding: 15px 0;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-section {
+  padding: 10px 15px 5px;
+}
+
+.section-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #6c757d;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.nav-item {
+  margin: 2px 0;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #f8f9fa;
+  transition: all 0.2s;
+  border-radius: 4px;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link.active {
+  background-color: #0d6efd;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(13, 110, 253, 0.4);
+}
+
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+/* Icons - for now we're using pseudo-elements, but you can replace these with actual icons */
+.dashboard-icon::before {
+  content: "📊";
+}
+
+.explorer-icon::before {
+  content: "🔍";
+}
+
+.wallets-icon::before {
+  content: "💼";
+}
+
+.send-icon::before {
+  content: "📤";
+}
+
+.transactions-icon::before {
+  content: "📝";
+}
+
+.contracts-icon::before {
+  content: "📜";
+}
+
+.create-contract-icon::before {
+  content: "✏️";
+}
+
+.mining-icon::before {
+  content: "⛏️";
+}
+
+.mine-block-icon::before {
+  content: "🧱";
+}
+
+.admin-icon::before {
+  content: "🛡️";
+}
+
+.users-icon::before {
+  content: "👥";
+}
+
+.network-icon::before {
+  content: "🌐";
+}
+
+.system-icon::before {
+  content: "⚙️";
+}
+
+.profile-icon::before {
+  content: "👤";
+}
+
+.security-icon::before {
+  content: "🔒";
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+  
+  .sidebar.expanded {
+    transform: translateX(0);
+  }
+}

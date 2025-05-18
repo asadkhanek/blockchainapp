@@ -1,0 +1,1 @@
+const connectDB = require('./config/database'); (async () => { try { await connectDB(); console.log('MongoDB connection successful'); } catch (err) { console.error('MongoDB connection failed:', err.message); } process.exit(); })();

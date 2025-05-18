@@ -1,0 +1,228 @@
+.security-settings-container {
+  padding: 20px;
+}
+
+.security-title {
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #333;
+}
+
+.settings-card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.settings-card .card-header {
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.two-factor-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.info-text {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.info-text i {
+  font-size: 24px;
+  color: #0d6efd;
+}
+
+.info-text h6 {
+  margin-bottom: 10px;
+}
+
+.info-text p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.app-list {
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.app-list ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.app-list li {
+  margin-bottom: 5px;
+}
+
+.password-strength {
+  margin-bottom: 1rem;
+}
+
+.strength-label {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.strength-meter {
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.strength-progress {
+  height: 100%;
+  transition: width 0.3s;
+}
+
+.very-weak {
+  background-color: #dc3545;
+  color: #dc3545;
+}
+
+.weak {
+  background-color: #fd7e14;
+  color: #fd7e14;
+}
+
+.medium {
+  background-color: #ffc107;
+  color: #ffc107;
+}
+
+.strong {
+  background-color: #20c997;
+  color: #20c997;
+}
+
+.very-strong {
+  background-color: #198754;
+  color: #198754;
+}
+
+.session-info {
+  margin-bottom: 20px;
+}
+
+.session-details {
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.detail-item {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.detail-item:last-child {
+  margin-bottom: 0;
+}
+
+.detail-item .label {
+  font-weight: 600;
+  min-width: 100px;
+  color: #6c757d;
+}
+
+.sessions-list {
+  margin-top: 15px;
+}
+
+.session-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.session-item:last-child {
+  border-bottom: none;
+}
+
+.session-info {
+  display: flex;
+  align-items: center;
+}
+
+.session-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-size: 18px;
+  color: #6c757d;
+}
+
+.session-device {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.session-meta {
+  font-size: 0.85rem;
+  color: #6c757d;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.two-factor-setup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.setup-step {
+  margin-bottom: 10px;
+}
+
+.setup-step h6 {
+  margin-bottom: 15px;
+}
+
+.qr-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.manual-key {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.key-value {
+  font-family: 'Courier New', monospace;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  word-break: break-all;
+}
+
+.no-data-message {
+  text-align: center;
+  padding: 20px;
+  color: #6c757d;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}

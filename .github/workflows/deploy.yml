@@ -1,0 +1,44 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js environment ⚙️
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'npm'
+      
+      - name: Install dependencies 📦
+        run: |
+          npm ci
+          cd client
+          npm ci
+      
+      - name: Build frontend 🏗️
+        run: |
+          cd client
+          npm run build
+          
+      - name: Configure for GitHub Pages 🔧
+        run: |
+          cd client/build
+          echo "/* /index.html 200" > _redirects
+          cp index.html 404.html
+          
+      - name: Deploy to GitHub Pages 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: client/build
+          clean: true

@@ -1,0 +1,123 @@
+.blockchain-explorer-container {
+  padding: 20px;
+}
+
+.explorer-title {
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #333;
+}
+
+.search-card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.data-card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.block-details,
+.transaction-details {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.hash-value {
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+.block-row,
+.transaction-row {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.block-row:hover,
+.transaction-row:hover {
+  background-color: #f8f9fa;
+}
+
+.transaction-list-container {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.no-data-message {
+  text-align: center;
+  padding: 20px;
+  color: #6c757d;
+}
+
+.blockchain-stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.blockchain-stats .stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.blockchain-stats .stat-item span:first-child {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 5px;
+}
+
+.blockchain-stats .stat-item span:last-child {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.transaction-data {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.contract-code {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 4px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.contract-code pre {
+  margin-bottom: 0;
+  white-space: pre-wrap;
+  font-size: 0.9rem;
+}
+
+.block-link {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.block-link:hover {
+  text-decoration: underline;
+}

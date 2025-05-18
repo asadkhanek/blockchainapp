@@ -1,0 +1,108 @@
+.code-editor-container {
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.CodeMirror {
+  height: 100%;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 14px;
+}
+
+.cm-s-material.CodeMirror {
+  background-color: #263238;
+  color: #EEFFFF;
+}
+
+.cm-s-material .CodeMirror-gutters {
+  background-color: #263238;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cm-s-material .CodeMirror-linenumber {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.cm-s-material .CodeMirror-cursor {
+  border-left: 1px solid #FFCC00;
+}
+
+/* Syntax highlighting */
+.cm-s-material .cm-keyword {
+  color: #C792EA;
+}
+
+.cm-s-material .cm-operator {
+  color: #89DDFF;
+}
+
+.cm-s-material .cm-variable-2 {
+  color: #EEFFFF;
+}
+
+.cm-s-material .cm-variable-3, .cm-s-material .cm-type {
+  color: #DECB6B;
+}
+
+.cm-s-material .cm-builtin {
+  color: #FFCB6B;
+}
+
+.cm-s-material .cm-atom {
+  color: #F78C6C;
+}
+
+.cm-s-material .cm-number {
+  color: #FF5370;
+}
+
+.cm-s-material .cm-def {
+  color: #82AAFF;
+}
+
+.cm-s-material .cm-string {
+  color: #C3E88D;
+}
+
+.cm-s-material .cm-string-2 {
+  color: #f07178;
+}
+
+.cm-s-material .cm-comment {
+  color: #546E7A;
+}
+
+.cm-s-material .cm-variable {
+  color: #f07178;
+}
+
+.cm-s-material .cm-tag {
+  color: #FF5370;
+}
+
+.cm-s-material .cm-meta {
+  color: #FFCB6B;
+}
+
+.cm-s-material .cm-attribute {
+  color: #C792EA;
+}
+
+.cm-s-material .cm-property {
+  color: #C792EA;
+}
+
+.cm-s-material .cm-qualifier {
+  color: #DECB6B;
+}
+
+.cm-s-material .cm-error {
+  color: #FF5370;
+}
+
+.cm-s-material .CodeMirror-matchingbracket {
+  color: #FFCC00 !important;
+  text-decoration: underline;
+  border-bottom: 1px solid #FFCC00;
+}

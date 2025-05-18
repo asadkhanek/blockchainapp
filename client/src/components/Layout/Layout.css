@@ -1,0 +1,51 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+  padding-top: 60px; /* Height of navbar */
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #1a1a2e;
+  color: #fff;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px;
+  margin-left: 0;
+  transition: margin-left 0.3s ease;
+}
+
+.main-content.with-sidebar {
+  margin-left: 240px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 0;
+    opacity: 0;
+  }
+  
+  .sidebar.expanded {
+    width: 240px;
+    opacity: 1;
+  }
+
+  .main-content.with-sidebar {
+    margin-left: 0;
+  }
+}

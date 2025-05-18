@@ -1,0 +1,152 @@
+.transaction-management-container {
+  padding: 20px;
+}
+
+.transaction-title {
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #333;
+}
+
+.transaction-controls {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.control-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.filter-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-select,
+.sort-select {
+  min-width: 160px;
+}
+
+.transaction-table {
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  border-radius: 8px;
+}
+
+.type-cell {
+  display: flex;
+  align-items: center;
+}
+
+.type-icon {
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.address-cell {
+  max-width: 200px;
+}
+
+.address-value {
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.amount-cell {
+  font-weight: 600;
+}
+
+.action-btn {
+  margin-right: 5px;
+}
+
+.no-data-message {
+  text-align: center;
+  padding: 40px;
+  color: #6c757d;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.transaction-row {
+  transition: background-color 0.2s;
+}
+
+.transaction-row:hover {
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.transaction-row.sent .type-icon {
+  color: #dc3545;
+}
+
+.transaction-row.received .type-icon {
+  color: #28a745;
+}
+
+.transaction-row.contract .type-icon {
+  color: #007bff;
+}
+
+.transaction-row.mining .type-icon {
+  color: #ffc107;
+}
+
+.transaction-confirmation {
+  padding: 15px;
+}
+
+.confirmation-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: flex-start;
+}
+
+.confirmation-item .label {
+  font-weight: 600;
+  color: #6c757d;
+  min-width: 80px;
+}
+
+.confirmation-item .value {
+  text-align: right;
+  word-break: break-all;
+}
+
+.confirmation-item .total {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.confirmation-item .memo {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .control-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
